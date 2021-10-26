@@ -2,7 +2,7 @@
 
 #### Using getPriceBSC.py
 ```
-$ python3 getPriceBSC.py
+$ python3 getPriceBSC.py [token address / contract address]
 ```
 #### Requirement
 ```
