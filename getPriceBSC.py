@@ -30,7 +30,7 @@ def GetTokenInformation(token):
     PriceTokentoBusd(Web3.toChecksumAddress(sys.argv[1]), str(Contract.functions.symbol().call()))
 
 
-# Connect to websocket
+# Connect to http rpc
 w3 = Web3(Web3.HTTPProvider('https://bsc-dataseed.binance.org/'))
 
 # if you connect with websocket 
