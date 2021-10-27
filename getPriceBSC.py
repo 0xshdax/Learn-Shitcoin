@@ -32,6 +32,10 @@ def GetTokenInformation(token):
 
 # Connect to websocket
 w3 = Web3(Web3.HTTPProvider('https://bsc-dataseed.binance.org/'))
+
+# if you connect with websocket 
+# w3 = Web3(Web3.WebsocketProvider('wss://127.0.0.1:8812'))
+
 # ABI Uniswap
 with open('uniswap/UniswapV2Router.json', 'r') as abi_definition:
     UniswapV2Router = json.load(abi_definition)
