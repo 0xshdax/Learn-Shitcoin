@@ -5,12 +5,12 @@
 
 import json, time, sys
 from web3 import Web3
-from env__ import Factory_pancakeswap, Busd_address
+from env__ import Factory_address, Busd_address
 
 def PriceTokentoBusd(token, nametoken):
     while True:
         busd_token  = Web3.toChecksumAddress(Busd_address)
-        Contract    = w3.eth.contract(address=Factory_pancakeswap, abi=UniswapV2Factory)
+        Contract    = w3.eth.contract(address=Factory_address, abi=UniswapV2Factory)
         GetPair     = Contract.functions.getPair(token,busd_token).call()
         ConnectPair = w3.eth.contract(abi=UniswapV2Pair, address=GetPair)
         Reserves    = ConnectPair.functions.getReserves().call()
