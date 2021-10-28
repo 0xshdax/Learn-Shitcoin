@@ -5,7 +5,7 @@
 
 import json, time, sys
 from web3 import Web3
-from addressUniswap__ import Factory_pancakeswap, Busd_address
+from env__ import Factory_pancakeswap, Busd_address
 
 def PriceTokentoBusd(token, nametoken):
     while True:
@@ -30,7 +30,7 @@ def GetTokenInformation(token):
     PriceTokentoBusd(Web3.toChecksumAddress(sys.argv[1]), str(Contract.functions.symbol().call()))
 
 
-# Connect to http rpc
+# Connect to websocket
 w3 = Web3(Web3.HTTPProvider('https://bsc-dataseed.binance.org/'))
 
 # if you connect with websocket 
