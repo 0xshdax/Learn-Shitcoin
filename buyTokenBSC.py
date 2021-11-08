@@ -23,7 +23,7 @@ def buyToken(Amount, Path, W_address, estimate):
     })
     signed_txn = w3.eth.account.sign_transaction(txn, private_key=private_key)
     tx_token = w3.eth.send_raw_transaction(signed_txn.rawTransaction)
-    print(w3.toHex(tx_token))
+    print('tx : ' + w3.toHex(tx_token))
 
 # ABI Uniswap
 with open('uniswap/UniswapV2Router.json', 'r') as abi_definition:
