@@ -1,5 +1,5 @@
-# author  : @shdax
-# github  : github.com/shdax
+# author  : @0xshdax
+# github  : github.com/0xshdax
 # name    : get Price token network BSC (Binance Smart Chain)
 # How to : python3 getPriceBSC.py [name token]
 
